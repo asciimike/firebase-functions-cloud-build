@@ -4,7 +4,7 @@ steps:
 - name: gcr.io/cloud-builders/git
   args: ['fetch', '--unshallow']
 - name: gcr.io/cloud-builders/npm
-  args: ['install']
+  args: ['install', 'functions/package.json']
 - name: 'gcr.io/firebase-functions-cloud-build/firebase'
   args: ['deploy', '--only', 'functions']
   secretEnv: ['FIREBASE_TOKEN']
