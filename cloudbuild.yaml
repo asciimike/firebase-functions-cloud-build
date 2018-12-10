@@ -3,8 +3,8 @@ steps:
   args: ['clone', 'https://github.com/mcdonamp/firebase-functions-cloud-build']
 - name: gcr.io/cloud-builders/git
   args: ['fetch', '--unshallow']
-- name: gcr.io/cloud-builders/npm
-  args: ['install', './functions/package.json']
+- name: gcr.io/cloud-builders/npm:node-6.14.4
+  args: ['install', 'functions']
 - name: 'gcr.io/firebase-functions-cloud-build/firebase'
   args: ['deploy', '--only', 'functions']
   secretEnv: ['FIREBASE_TOKEN']
