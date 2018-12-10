@@ -4,7 +4,7 @@ steps:
 - name: gcr.io/cloud-builders/git
   args: ['fetch', '--unshallow']
 - name: 'gcr.io/firebase-functions-cloud-build/firebase'
-  args: ['deploy', '--only functions']
+  args: ['deploy', '--only', 'functions']
   secretEnv: ['FIREBASE_TOKEN']
 secrets:
 - kmsKeyName: 'projects/firebase-functions-cloud-build/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
