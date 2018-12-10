@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/firebase-functions-cloud-build/git'
+- name: 'gcr.io/cloud-builders/git'
   args: ['clone', 'https://github.com/mcdonamp/firebase-functions-cloud-build','--unshallow']
 - name: 'gcr.io/firebase-functions-cloud-build/firebase'
   args: ['deploy', '--only functions']
