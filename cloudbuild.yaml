@@ -11,4 +11,4 @@ steps:
 secrets:
 - kmsKeyName: 'projects/firebase-functions-cloud-build/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
   secretEnv:
-    FIREBASE_TOKEN: 'CiQA59x8U0QfToT45aaVCms/rJG2bdt6jVkMp8aeylaT+47oOMMSVgAMiuopoSgNY0kZyempKoNyARMYouqLItfeS/9jcnBXhb3T0xWL+hMtCahx8yvCD6W4A3E+D1L/2KXbyGfULrI6ii0TJfSew3QAx4UFdAgjm/2u4cxh'
+    FIREBASE_TOKEN: CiQA59x8U9n6XkSAjYCRabwznDK8GKSWzEsVHyWvqsKVclApIeASVQAMiuopEmw7LfroQuIApod53KduR5prd90MitYAoXSQeoh/RB4QfNN2kHqrv5iavFcByMrKQqDknCEZiBlFfdNAXsN7fIADgHnmcmJcJm1Qn6GQEx4=
